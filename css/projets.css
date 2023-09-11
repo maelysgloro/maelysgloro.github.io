@@ -1,0 +1,312 @@
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#main_ico{
+  background-color: #ebadad;
+}
+#main_brickadata{
+  background-color: #eaccad;
+}
+#main_cea{
+  background-color: #eaeaad;
+}
+
+#main_accueillo{
+  background-color: #cceaad;
+}
+#main_auray{
+  background-color: #adeaad;
+}
+#main_donutopia{
+  background-color: #adeacc;
+}
+
+#main_broderie{
+  background-color: #adeaea;
+}
+#main_ccn{
+  background-color:#adccea;
+}
+#main_jna{
+  background-color: #adadea;
+}
+#main_tarot{
+  background-color: #ccadea;
+}
+#main_inframonde{
+  background-color: #ebadeb;
+}
+#main_caisses{
+  background-color: #ebadcc;
+}
+
+#main_diplome{
+  background-color: #ebadad;
+}
+
+main{
+  width: 100vw;
+  max-width:100%;
+  
+  color: black;
+  line-height: normal;
+  font-family: "Nunito", sans-serif;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.intro{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.texte{
+  height: 100vh;
+  width: 40%;
+}
+
+#video{
+  width: 55%;
+  height:80%;
+}
+
+.texteimg{
+  height: 100vh;
+  width: 40%;
+}
+
+.imgintro{
+  height: 80%;
+  margin-left: 10px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+#icoframe{
+  margin-top: 5%;
+}
+
+
+
+h1{
+  font-family: "Modak", sans-serif;
+  margin: 0px;
+  font-size: 55px;
+}
+
+h2{
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+h3{
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+h4{
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+p, a{
+ font-weight: 300;
+ font-size: 15px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ text-decoration: none;
+}
+
+.gras{
+  font-weight: 700;
+}
+
+.md-18{
+  font-size: 20px;
+}
+
+.interactifico{
+  display: flex;
+  flex-direction: column;
+  margin-left:10%;
+  margin-right:10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteneurvid{
+  height: 768px;
+  width:1024px;
+}
+
+#joue{
+  width:290px;
+  margin-top: 30px;
+}
+
+
+.images{
+  display: flex;
+  flex-direction: column;
+}
+
+.haut{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.grande{
+  width: 80%;
+}
+
+.bas{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.gauche_inframonde, .droite_inframonde{
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.gauche_ico{
+  width: 20%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-right: 1%;
+}
+
+.droite_ico{
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-left: 1%;
+}
+
+.gauche_inframonde{
+  padding-right: 1%;
+}
+
+.droite_inframonde{
+  padding-left: 1%;
+}
+
+.img, .grande{
+  padding-bottom: 30px;
+}
+
+.img{
+    width:100%;
+}
+
+.fleches{
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#precedent{
+  margin-right: 80px;
+}
+
+.lien_projets p{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.material-symbols-outlined{
+  vertical-align: sub;
+}
+
+.lien_projets{
+  position: relative;
+  display: inline-block;
+}
+
+.lien_projets::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+.lien_projets:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#suivant{
+  margin-left: 80px;
+}
+
+footer{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+
+@media screen and (min-width : 320px) and (max-width:1300px){
+
+  .intro{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 80%;
+    margin-bottom: 5%;
+  }
+  .texte, .texteimg{
+    width: 100%;
+    height: auto;
+  }
+  #video{
+    width: 100%;
+    height: 700px;
+  }
+  .imgintro{
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+}

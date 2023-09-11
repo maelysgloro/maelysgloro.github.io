@@ -1,0 +1,417 @@
+* {
+  /* Disable iPad double-tap to zoom */
+  touch-action: manipulation;
+  /* Disable iPad long press */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+html, body {
+  margin:0;
+  padding:0;
+  background:white;
+  overflow:hidden;
+  position: fixed;
+  user-select:none;
+  width: 100%;
+  height: 100%;
+  font: 9px "Montserrat", sans-serif;
+}
+
+.body-party{
+  background:#CA7CD8 !important;
+}
+
+#ipad-device {
+  /*
+  Largeur réelle : 1536px
+  Hauteur réelle : 2048px
+  */
+  background: #FFF;
+  width: 1024px;
+  height: 768px;
+  /* Disable iPad scroll momentum */
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+}
+
+main{
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.invisible{
+  display: none;
+}
+
+
+
+
+/*La consigne de Party*/
+p.consigne{
+  display:none;
+  position: absolute;
+  border: 2px solid #CA7CD8;
+  border-radius: 10px;
+  padding: 10px;
+  bottom: 120px;
+  left: 730px;
+  width: 80px;
+  background: #FFF;
+}
+
+
+
+
+/*Le Player*/
+#player    {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  border-radius: 50%;
+  border: 4px solid #FFF;
+  width: 70px;
+  height: 70px;
+  top: 300px;
+  margin: none;
+  box-shadow: 3px 3px !important;
+  background-image: url(img/size.png);
+  background-repeat: no-repeat;
+  background-position: center middle;
+  background-size: contain;
+}
+
+
+#rangeSize {
+  width: 15px;
+  height: 150px;
+  padding: 0;
+}
+
+/*La section*/
+.pinceau{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height:195px;
+  margin-top: 45px;
+}
+
+#rangeSize #inputSize {
+  width: 150px;
+  height: 15px;
+  margin: 0;
+  transform-origin: 75px 75px;
+  transform: rotate(-90deg);
+
+  -webkit-appearance: none;     /*nécessaire pour Chrome */
+  padding: 0;                   /* nécessaire pour IE */
+  font: inherit;                /* même rendu suivant font document */
+  outline: none;
+  color: white;                  /* sert pour couleur de référence, via currentColor, pour le curseur */
+  opacity: .8;
+  background: black;             /* sert pour couleur de fond de la zone de déplacement */
+  box-sizing: border-box;       /* même modèle de boîte pour tous */
+  border-radius: 10px;
+  transition: opacity .2s;
+  cursor: pointer;
+  align-items: center;
+}
+/* la zone de déplacement */
+#inputSize::-webkit-slider-runnable-track {
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;  /* supprimé définie sur l'input */
+}
+/* le curseur */
+#inputSize::-webkit-slider-thumb {
+  -webkit-appearance: none;       /* également nécessaire sur le curseur */
+  width: 3em;
+  height: 10px;                /* s'adapte à la hauteur de l'input */
+  border: none;
+  border-radius: 10px;               /* pris en compte sur Webkit et Edge */
+  background: currentColor;       /* pris en compte sur Webkit only */
+}
+
+
+
+
+/*Le Bouton Switch*/
+/*on place le bouton switch mode dans la page*/
+.switchmode {
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  height: 7em;
+}
+/*cache la checkbox par défault*/
+.switchmode #check {
+  display: none;
+}
+/*le fond du bouton*/
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  border-radius: 34px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*le rond à l'intérieur du bouton*/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.5em;
+  width: 1.5em;
+  left: 0.45em;
+  bottom: 0.45em;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/*nouvelle couleur de fond quand le bouton est checked*/
+#check:checked + .slider {
+  background-color: #000;
+}
+/*ombre au moment du click*/
+#check:focus + .slider {
+  box-shadow: 0 0 1px #000;
+}
+
+.on, .off
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top:50%;
+}
+
+.on img,.off img{
+  max-width: 50px;
+}
+
+
+
+
+
+/*Les background des boutons*/
+#gomme{
+  background-image:url(./picto/gomme.png);
+}
+#grille{
+  background-image:url(./picto/grille.png);
+}
+#reset{
+  background-image:url(./picto/reset.png);
+}
+#fill{
+  background-image:url(./picto/fill.png);
+}
+#export{
+  background-image:url(./picto/export.png);
+}
+
+#coin{
+  background-image:url(./img/coin.png);
+}
+#rondcache{
+  background-image:url(./img/rondcache.png);
+}
+#oeil{
+  background-image:url(./img/oeil.png);
+}
+#cercle{
+  background-image:url(./img/cercle.png);
+}
+#cmd{
+  background-image:url(./img/cmd.png);
+}
+#etoile{
+  background-image:url(./img/etoile.png);
+}
+
+
+
+
+/*Les boutons*/
+/*boutons + exemples*/
+button{
+  color: black;
+  background-color: transparent;
+  text-align: center;
+
+  border-radius: 10px;
+  border: 2px solid black;
+
+  width: 50px;
+  height: 50px;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  transition:all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+/*La section*/
+.boutons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  width: 258px;
+}
+
+/*Les boutons sauf les exemples*/
+.b{
+  box-shadow: 3px 3px black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/*Moment où on appuie dessus*/
+.boutons button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px;
+}
+
+/*Lorsque Gomme ou Grille est selectionné
+  *enlève la box-shadow
+  *translate à droite en en bas à la place de la box-shadow
+*/
+.selection{
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px;
+  transform: translate(3px, 3px);
+}
+
+/*Les boutons fill*/
+.cat-boutons{
+  border-radius: 0px;
+  filter: brightness(0%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom:40px;
+}
+
+#taille1{
+  background-image: url(img/size.png);
+  background-position:cover;
+  background-size: 60%;
+}
+
+#taille2{
+  background-image: url(img/size.png);
+  background-position:cover;
+}
+
+/*Les exemples*/
+/*La section*/
+.exemples{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+/*Les boutons exemples*/
+.exemple{
+  width:170px;
+  height:170px;
+  border: none;
+}
+/*Les background des boutons exemples*/
+#eclair{
+  background-image:url(./exemple/eclair.png);
+}
+#vinyle{
+  background-image:url(./exemple/vinyle.png);
+}
+#cassette{
+  background-image:url(./exemple/cassette.png);
+}
+
+
+
+
+/*L'editor grid et les grid-item*/
+#grid {
+  width:640px;
+  height:640px;
+  display:flex;
+  flex-wrap:wrap;
+
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  background: #FFF;
+}
+
+.displayGrid {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.grid-item {
+  width:32px;
+  height:32px;
+
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  filter: brightness(0%);
+
+  transition:filter 4s ease-out;
+}
+
+.couleur{
+  filter:brightness(100%);
+  transition: filter ease-in-out;
+}
+
+/*Les states, six gifs*/
+.grid-item[data-state="1"] {
+  background-image:url(./gifcolor/color_coin.gif);
+}
+
+.grid-item[data-state="2"] {
+  background-image:url(./gifcolor/color_rondcache.gif);
+}
+
+.grid-item[data-state="3"] {
+  background-image:url(./gifcolor/color_oeil.gif);
+}
+
+.grid-item[data-state="4"] {
+  background-image:url(./gifcolor/color_cercle.gif);
+}
+
+.grid-item[data-state="5"] {
+  background-image:url(./gifcolor/color_cmd.gif);
+}
+
+.grid-item[data-state="6"] {
+  background-image:url(./gifcolor/color_etoile.gif);
+}

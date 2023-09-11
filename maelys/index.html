@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ico Party</title>
+
+      <!-- Pour éviter le zoom navigateur -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Pour permettre le mode plein écran en ajoutant le favori à l'écran d'accueil -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Pour styliser la status bar sous iOS -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+
+  <body data-mode="1">
+    <div id="ipad-device">
+      <main>
+        <div id="player"></div>
+        <p class="consigne">Mode Party !<br>Repasse ton doigt sur ton dessin pour une surprise.
+          <br>Appuie sur stop pour modifier le dessin.</p>
+
+        <div class="editor">
+          <div id="grid"></div>
+        </div>
+
+        <div class="boutons">
+
+
+          <h3>Outils</h3>
+          <div class="cat-boutons">
+            <button class="b change-taille" id="taille1" data-taille="30"></button>
+            <button class="b change-taille selection" id="taille2" data-taille="70"></button>
+            <button class="b" id="gomme" data-gomme="1"></button>
+            <button class="b" id="reset"></button>
+          </div>
+          <div>
+          <h3>Fonds</h3>
+          <p>Commence avec un fond</p>
+          </div>
+
+
+          <div class="cat-boutons">
+            <button class="b" id="coin"></button>
+            <button class="b" id="rondcache"></button>
+            <button class="b" id="oeil"></button>
+            <button class="b" id="cercle"></button>
+            <button class="b" id="cmd"></button>
+            <button class="b" id="etoile"></button>
+          </div>
+
+          <div>
+          <h3>Modèles</h3>
+          <p>Charge un modèle</p>
+          </div>
+
+          <div class="cat-boutons">
+
+            <button class="b" id="eclair"></button>
+            <button class="b" id="vinyle"></button>
+            <button class="b" id="cassette"></button>
+          </div>
+
+          <div>
+            <h3>Mode Party!</h3>
+            <p>À activer une fois que tu as terminé ton dessin</p>
+          </div>
+
+
+          <label class="switchmode">
+            <input id="check" type="checkbox">
+            <span class="slider"></span>
+            <span class="on"><img src="img/stop.png" alt=""> </span>
+            <span class="off"><img src="img/play.png" alt=""> </span>
+          </label>
+
+          <!-- <button class="b" id="grille"></button> -->
+          <!-- <button class="b" id="export"></button> -->
+        </div>
+
+
+
+
+
+
+      </main>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="jquery/jquery-ui.js"></script>
+
+    <script src="jquery/jquery.ui.core.js"></script>
+    <script src="jquery/jquery.ui.widget.js"></script>
+    <script src="jquery/jquery.ui.mouse.js"></script>
+    <script src="jquery/jquery.ui.draggable.js"></script>
+    <script src="jquery/jquery-collision.js"></script>
+
+    <script src="scripts.js" charset="utf-8"></script>
+    <script src="jquery/jquery-ui-touch-punch.js"></script>
+  </body>
+</html>

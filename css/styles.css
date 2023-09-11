@@ -1,0 +1,502 @@
+
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main{
+  width: 100vw;
+  max-width:100%;
+  
+  color: black;
+  line-height: normal;
+  font-family: "Nunito", sans-serif;
+}
+
+header{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+}
+
+.intro{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#p5{
+  position: absolute;
+  z-index: -2;
+}
+
+
+
+
+.text-container {
+  position: relative;
+}
+
+.hover-text {
+  display: inline-block;
+}
+
+.hover-text span {
+  font-family: "Modak", sans-serif;
+  font-size: 150px;
+  margin: 0;
+  transition: color 0.4s ease;
+}
+
+
+
+
+.reseaux{
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+}
+
+.material-symbols-outlined{
+  vertical-align: sub;
+}
+
+.lien_reseaux{
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.lien_reseaux::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+#cv::after{
+  background-color: #ebadad;
+}
+#linkedin::after{
+  background-color: #adeaad;
+}
+#insta::after{
+  background-color: #adccea;
+}
+#vimeo::after{
+  background-color: #ccadea;
+}
+#mail::after{
+  background-color: #ebadcc;
+}
+
+.lien_reseaux:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.intro p{
+  font-size: 20px;
+}
+
+h2{
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 70px;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h4{
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p{
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.partenaire{
+  font-size: 10px;
+  position: absolute;
+}
+
+#part1{
+  margin-left: 140px;
+}
+#part2{
+  margin-left: 185px;
+}
+#part3{
+  margin-left: 170px;
+}
+#part4{
+  margin-left: 185px;
+}
+
+
+
+
+.demarche{
+  width: 100vw;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.demarche_container{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.demarche_texte{
+  width: 32%;
+
+}
+
+.demarche_image{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.demarche_demarche{
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.demarche_demarche_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.demarche_demarche_container p{
+  text-align: center;
+}
+
+#contact{
+  width: 70%;
+  height:25%;
+  margin-right: 15%;
+  margin-left: 15%;
+  background-image: url(./../apropos/contact.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.md-18{
+  font-size: 20px;
+}
+
+.lien_contact{
+  position: relative;
+  display: inline-block;
+}
+
+.lien_contact::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+  background-color: #ccadea;
+}
+
+.lien_contact:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+
+#moi{
+  width: 280px;
+  z-index: +1;
+  transition: transform 400ms ease-in-out;
+}
+#moi:hover{
+  transform: rotate(-5deg); 
+}
+
+.ombre_photo{
+  position: absolute;
+  width: 280px;
+  height: 317.7px;
+  border: 2px solid black;
+}
+#ombre_bleu{
+  background-color: #adccea;
+  transform: rotate(8deg);
+}
+#ombre_vert{
+  background-color: #adeaad;
+  transform: rotate(15deg);
+}
+#ombre_rose{
+  background-color: #ebadcc;
+  transform: rotate(20deg);
+}
+
+
+
+
+.img_demarche{
+  width: 30%;
+  
+}
+
+
+
+
+.projets{
+  width: 100vw;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+
+.categorie{
+  width: 100%;
+  margin-top: 75px;
+}
+
+.card_projet_container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pro{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width:292px;
+  height:194px;
+  border: 2px solid black;
+  border-bottom: none;
+}
+
+.txt{
+  height: 90px;
+  padding:5%;
+  border: 2px solid black;
+  background-color: white;
+}
+
+#ico .pro{
+  background-image: url(./../projets/intro/ico3.jpg);
+}
+#erasme .pro{
+  background-image: url(./../projets/erasme/erasmegrande.jpg);
+}
+#cea .pro{
+  background-image: url(./../projets/intro/cea0.png);
+}
+
+#accueillo .pro{
+  background-image: url(./../projets/intro/accueillo.png);
+}
+#auray .pro{
+  background-image: url(./../projets/intro/auray.png);
+}
+#donutopia .pro{
+  background-image: url(./../projets/intro/donutopia.png);
+}
+
+#broderie .pro{
+  background-image: url(./../projets/intro/programme.jpg);
+}
+#ccn .pro{
+  background-image: url(./../projets/intro/ccn0.jpg);
+}
+#jna .pro{
+  background-image: url(./../projets/intro/jna.png);
+}
+#tarot .pro{
+  background-image: url(./../projets/intro/charbon0.jpg);
+}
+#inframonde .pro{
+  background-image: url(./../projets/intro/infra.jpg);
+}
+#caisses .pro{
+  background-image: url(./../projets/intro/tuning.jpg);
+}
+
+#diplome .pro{
+  background-image: url(./../projets/intro/diplome0.jpg);
+}
+
+.card{
+  transition: transform 400ms ease-in-out;
+}
+
+.card:hover{
+  transform: rotate(-5deg);
+  
+}
+.card:hover .ombre{
+  transform: rotate(5deg);
+  
+}
+
+.ombre{
+  width: 292px;
+  height: 284px;
+  position: absolute;
+  z-index: -1;
+  border: 2px solid black;
+  transition: transform 400ms ease-in-out;
+}
+
+#ombre_ico{
+  background-color: #ebadad;
+}
+#ombre_brickadata{
+  background-color: #eaccad;
+}
+#ombre_cea{
+  background-color: #eaeaad;
+}
+
+#ombre_accueillo{
+  background-color: #cceaad;
+}
+#ombre_auray{
+  background-color: #adeaad;
+}
+#ombre_donutopia{
+  background-color: #adeacc;
+}
+
+#ombre_broderie{
+  background-color: #adeaea;
+}
+#ombre_ccn{
+  background-color:#adccea;
+}
+#ombre_jna{
+  background-color: #adadea;
+}
+#ombre_tarot{
+  background-color: #ccadea;
+}
+#ombre_inframonde{
+  background-color: #ebadeb;
+}
+#ombre_caisses{
+  background-color: #ebadcc;
+}
+
+#ombre_diplome{
+  background-color: #ebadad;
+}
+
+footer{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+
+
+@media screen and (min-width : 320px) and (max-width:1200px){
+
+  #moi, .ombre_photo{
+    width: 210px;
+    height: 238.275px;
+  }
+
+}
+
+@media screen and (min-width : 320px) and (max-width:900px){
+
+  .demarche_container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .demarche_texte{
+    width: 100%;
+    height: 420px;
+  }
+  .demarche_image{
+    margin: 100px;
+  }
+  .demarche_demarche{
+    width: 100%;
+  }
+  #contact{
+    width: 400px;
+    height: 160px;
+    margin: 0;
+  }
+  .hover-text span{
+    font-size: 70px;
+  }
+
+}
+
+@media screen and (min-width : 320px) and (max-width:768px){
+
+  .hover-text span{
+    font-size: 50px;
+  }
+  .intro p{
+    font-size: 14px;
+  }
+   .demarche_texte{
+    width: 100%;
+    height: 550px;
+  }
+  #contact{
+    width: 300px;
+    height: 120px;
+    margin: 0;
+  }
+  .img_demarche{
+    width: 40%;
+  }
+
+}
