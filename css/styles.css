@@ -87,20 +87,16 @@ header{
 }
 
 #cv::after{
-  background-color: #ebadad;
+  background-color: #adccea;
 }
 #linkedin::after{
   background-color: #adeaad;
 }
-#insta::after{
-  background-color: #adccea;
-}
-#vimeo::after{
-  background-color: #ccadea;
-}
 #mail::after{
   background-color: #ebadcc;
 }
+
+
 
 .lien_reseaux:hover::after {
   transform: scaleX(1);
@@ -323,18 +319,14 @@ a{
   background-color: white;
 }
 
-#ico .pro{
-  background-image: url(./../projets/intro/ico3.jpg);
-}
-#erasme .pro{
-  background-image: url(./../projets/erasme/erasmegrande.jpg);
-}
-#cea .pro{
-  background-image: url(./../projets/intro/cea0.png);
-}
-
 #accueillo .pro{
-  background-image: url(./../projets/intro/accueillo.png);
+  background-image: url(./../projets/accueillo/accueillette_0.png);
+}
+#le_mene .pro{
+  background-image: url(./../projets/le_mene/le_mene1.jpg);
+}
+#data_etat .pro{
+  background-image: url(./../projets/data_etat/data_etat0.png);
 }
 #auray .pro{
   background-image: url(./../projets/intro/auray.png);
@@ -343,17 +335,26 @@ a{
   background-image: url(./../projets/intro/donutopia.png);
 }
 
+
+#ico .pro{
+  background-image: url(./../projets/intro/ico3.jpg);
+}
+#erasme .pro{
+  background-image: url(./../projets/erasme/erasmegrande.jpg);
+}
+#tarot .pro{
+  background-image: url(./../projets/intro/charbon0.jpg);
+}
+#diplome .pro{
+  background-image: url(./../projets/intro/diplome0.jpg);
+}
+
+
 #broderie .pro{
   background-image: url(./../projets/intro/programme.jpg);
 }
 #ccn .pro{
   background-image: url(./../projets/intro/ccn0.jpg);
-}
-#jna .pro{
-  background-image: url(./../projets/intro/jna.png);
-}
-#tarot .pro{
-  background-image: url(./../projets/intro/charbon0.jpg);
 }
 #inframonde .pro{
   background-image: url(./../projets/intro/infra.jpg);
@@ -362,9 +363,7 @@ a{
   background-image: url(./../projets/intro/tuning.jpg);
 }
 
-#diplome .pro{
-  background-image: url(./../projets/intro/diplome0.jpg);
-}
+
 
 .card{
   transition: transform 400ms ease-in-out;
@@ -388,46 +387,45 @@ a{
   transition: transform 400ms ease-in-out;
 }
 
-#ombre_ico{
+#ombre_accueillo{
   background-color: #ebadad;
 }
-#ombre_brickadata{
+#ombre_le_mene{
   background-color: #eaccad;
 }
-#ombre_cea{
+#ombre_data_etat{
   background-color: #eaeaad;
 }
-
-#ombre_accueillo{
+#ombre_auray{
   background-color: #cceaad;
 }
-#ombre_auray{
+#ombre_donutopia{
   background-color: #adeaad;
 }
-#ombre_donutopia{
+
+#ombre_ico{
   background-color: #adeacc;
+}
+#ombre_brickadata{
+  background-color: #adeaea;
+}
+#ombre_tarot{
+  background-color:#adccea;
+}
+#ombre_diplome{
+  background-color: #adadea;
 }
 
 #ombre_broderie{
-  background-color: #adeaea;
-}
-#ombre_ccn{
-  background-color:#adccea;
-}
-#ombre_jna{
-  background-color: #adadea;
-}
-#ombre_tarot{
   background-color: #ccadea;
 }
-#ombre_inframonde{
+#ombre_ccn{
   background-color: #ebadeb;
 }
-#ombre_caisses{
+#ombre_inframonde{
   background-color: #ebadcc;
 }
-
-#ombre_diplome{
+#ombre_caisses{
   background-color: #ebadad;
 }
 

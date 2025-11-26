@@ -5,48 +5,48 @@ body {
   overflow-x: hidden;
 }
 
-#main_ico{
+#main_accueillo{
   background-color: #ebadad;
 }
-#main_brickadata{
+#main_le_mene{
   background-color: #eaccad;
 }
-#main_cea{
+#main_data_etat{
   background-color: #eaeaad;
 }
-
-#main_accueillo{
+#main_auray{
   background-color: #cceaad;
 }
-#main_auray{
+#main_donutopia{
   background-color: #adeaad;
 }
-#main_donutopia{
+
+#main_ico{
   background-color: #adeacc;
+}
+#main_brickadata{
+  background-color: #adeaea;
+}
+#main_tarot{
+  background-color:#adccea;
+}
+#main_diplome{
+  background-color: #adadea;
 }
 
 #main_broderie{
-  background-color: #adeaea;
-}
-#main_ccn{
-  background-color:#adccea;
-}
-#main_jna{
-  background-color: #adadea;
-}
-#main_tarot{
   background-color: #ccadea;
 }
-#main_inframonde{
+#main_ccn{
   background-color: #ebadeb;
 }
-#main_caisses{
+#main_inframonde{
   background-color: #ebadcc;
 }
-
-#main_diplome{
+#main_caisses{
   background-color: #ebadad;
 }
+
 
 main{
   width: 100vw;
